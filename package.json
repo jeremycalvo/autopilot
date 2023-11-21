@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@nestjs/schedule": "^2.1.0",
+    "axios": "^1.2.6",
+    "google-auth-library": "^8.7.0"
+  }
+}

@@ -1,0 +1,14 @@
+FROM node:14
+
+WORKDIR /my-app
+
+COPY ./package.json ./
+
+COPY . .
+
+CMD ["npm", "i"]
+#ENV ANDROID_HOME /opt/android-sdk
+#ENV PATH ${PATH}:${ANDROID_HOME}/emulator:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools
+
+#CMD ["npx", "expo", "start"]
+#CMD ["eas", "build", "-p", "android", "--profile", "preview"]
