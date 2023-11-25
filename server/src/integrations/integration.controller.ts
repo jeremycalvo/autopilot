@@ -35,12 +35,14 @@ export class IntegrationController {
     @Get('list')
     @UseGuards(AuthGuard('jwt'))
     @ApiOperation({summary: 'List all user\'s recipes'})
+    @ApiBearerAuth()
     async listRecipes(@Request() req) {
         return this.integrationService.listRecipes(req);
     }
 
     @Delete('remove')
     @ApiOperation({summary: 'Remove a recipe from the database'})
+    @ApiBearerAuth()
     async removeRecipe(@Request() req, @Query('id') id: string) {
         return this.integrationService.removeRecipe(req, id);
     }
