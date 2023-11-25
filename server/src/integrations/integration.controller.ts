@@ -6,7 +6,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { IntegrationService } from './integration.service';
 import { RecipeDto } from 'src/dto/register.dto';
 import { JwtService } from '@nestjs/jwt';
-import { ApiBody, ApiOperation } from '@nestjs/swagger';
+import { ApiBearerAuth,ApiBody, ApiOperation } from '@nestjs/swagger';
 
 @Controller('recipe')
 export class IntegrationController {
@@ -17,6 +17,7 @@ export class IntegrationController {
     @Put('add')
     @ApiBody({type: RecipeDto, description: 'Recipe to add'})
     @ApiOperation({summary: 'Add a new recipe composed of a trigger, and a reaction'})
+    @ApiBearerAuth()
     async createRecipe(@Request() req, @Body() body: RecipeDto) {
         // Find user in DB
         const token = req.headers.authorization.split(' ')[1]
