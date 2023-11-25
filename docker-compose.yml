@@ -9,23 +9,6 @@ services:
       APP_PORT: 8080
     volumes:
       - ./server:/app
-  client_mobile:
-    build: ./client/mobile
-    volumes:
-      - ./client:/app
-
-  client_web:
-    build: ./client/web
-    container_name: area-client
-    volumes:
-      - ./client:/app
-    depends_on:
-      - client_mobile
-      - server
-    ports:
-    - "8081:8081"
-    environment:
-      APP_PORT: 8081
 
   mongo:
     image: mongo:latest
