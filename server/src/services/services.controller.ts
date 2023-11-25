@@ -10,6 +10,7 @@ export class ServicesController {
     @Get()
     @UseGuards(AuthGuard('jwt'))
     @ApiOperation({summary: 'Get all user\'s connected services'})
+    @ApiBearerAuth()
     getConnectedServices(@Request() req) {
         return this.service.getConnectedServices(req);
     }
