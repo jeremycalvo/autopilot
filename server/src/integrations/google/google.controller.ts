@@ -6,7 +6,7 @@ import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { User } from 'src/schemas/user.schema';
 import { JwtService } from '@nestjs/jwt';
-import { ApiOperation } from '@nestjs/swagger';
+import { ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 
 
 @Controller('services/gmail')
@@ -18,6 +18,7 @@ export class GoogleController {
 
     @Get('auth')
     @ApiOperation({summary: 'Authentificate to Gmail using verification code'})
+    @ApiBearerAuth()
     googleAuth(@Request() req, @Query('code') code: string) {
         return this.googleService.auth(code, req);
     }
