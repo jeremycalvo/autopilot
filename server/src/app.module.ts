@@ -34,6 +34,7 @@ import { SheetsController } from './integrations/google_sheet/sheet.controller';
 import { SheetsService } from './integrations/google_sheet/sheet.service';
 import { GoogleApis, sheets_v4 } from 'googleapis';
 import { AboutController } from './about/about.controller';
+import { RedirectController } from './redirect/redirect.controller';
 
 @Module({
   imports: [
@@ -49,7 +50,7 @@ import { AboutController } from './about/about.controller';
       rootPath: join(__dirname, '..', 'images'),
     }),
 ],
-  controllers: [AppController, AuthController, SecretPageController, DiscordController, SpotifyController, IntegrationController, ImagesController, ServicesController, GithubController, GoogleController, SheetsController, AboutController],
+  controllers: [AppController, AuthController, SecretPageController, DiscordController, SpotifyController, IntegrationController, ImagesController, ServicesController, GithubController, GoogleController, SheetsController, AboutController, RedirectController],
   providers: [AppService, AuthService, JwtStrategy, DiscordService, SpotifyService, IntegrationService, UtilsService, ServicesService, GithubService, GoogleService, SheetsService],
 })
 
