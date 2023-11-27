@@ -134,3 +134,4 @@ That's it ! Now, all you have to do is to add your own triggers and reactions fo
 
 ### Don't forget to update [integrations.ts JSON](./server/src/constants/integrations.ts) with you addings !
 # autopilot
+# AutoPilot
