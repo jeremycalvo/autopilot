@@ -6,7 +6,7 @@ export class RedirectController {
 
     @Get()
     redirect(@Req() req: Request, @Res() res) {
-        console.log(req.params);
+        console.log(req.query);
         return res.redirect(302, "autopilotapp://redirect?code=1234")
     }
 }
