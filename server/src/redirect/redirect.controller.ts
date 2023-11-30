@@ -1,6 +1,6 @@
 import { Controller, Get, Redirect, Res } from '@nestjs/common';
 
-@Controller('redirect')
+@Controller('redirector')
 export class RedirectController {
 
     @Get()
