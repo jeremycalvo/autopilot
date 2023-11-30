@@ -1,11 +1,10 @@
-import { Controller, Get, Redirect } from '@nestjs/common';
+import { Controller, Get, Redirect, Res } from '@nestjs/common';
 
 @Controller('redirect')
 export class RedirectController {
 
-    @Redirect("autopilotapp://redirect", 301)
     @Get()
-    redirect() {
-        return "Redirect to app"
+    redirect(@Res() res) {
+        return res.redirect(302, "autopilot://redirect?code=1234")
     }
 }

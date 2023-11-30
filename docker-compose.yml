@@ -24,3 +24,7 @@ services:
       MONGO_INITDB_DATABASE: ${MONGO_DATABASE}
     volumes:
      - .docker/:/docker-entrypoint-initdb.d/init-mongo.sh
+     - mongodb_data:/data/db  # Ajout du volume pour stocker les données MongoDB
+
+volumes:
+  mongodb_data:
