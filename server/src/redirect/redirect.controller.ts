@@ -5,6 +5,6 @@ export class RedirectController {
 
     @Get()
     redirect(@Res() res) {
-        return res.redirect(302, "autopilot://redirect?code=1234")
+        return res.redirect(302, "autopilotapp://redirect?code=1234")
     }
 }
