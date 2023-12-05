@@ -24,8 +24,7 @@ export class GithubService {
             'client_id':  process.env.GITHUB_CLIENT_ID,
             'client_secret': process.env.GITHUB_CLIENT_SECRET,
             //'grant_type': 'authorization_code',
-            'code': code,
-            'redirect_uri': "http://128.199.149.52:8080/redirector?service=github"
+            'code': code
         }
         const headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
