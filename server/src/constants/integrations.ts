@@ -2,7 +2,7 @@ export const INTEGRATIONS = [
     {
         name: 'Spotify',
         code: 'spotify',
-        link: 'https://accounts.spotify.com/authorize?scope=user-read-private%20user-read-email%20user-read-currently-playing%20user-modify-playback-state%20user-read-playback-state&access_type=offline&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8081%2Fservices&client_id=1ded278c7bd3445b8fdac4ba37af42de',
+        link: 'https://accounts.spotify.com/authorize?scope=user-read-private%20user-read-email%20user-read-currently-playing%20user-modify-playback-state%20user-read-playback-state&access_type=offline&response_type=code&redirect_uri=http%3A%2F%2F128.199.149.52%3A8080%2Fredirector%3Fservice%3Dspotify&client_id=1ded278c7bd3445b8fdac4ba37af42de',
         triggers: [
             {
                 name: 'Song changed',
@@ -31,7 +31,7 @@ export const INTEGRATIONS = [
     {
         name: 'Discord',
         code: 'discord',
-        link: 'https://discord.com/api/oauth2/authorize?client_id=1067011256403370044&permissions=2048&redirect_uri=http%3A%2F%2Flocalhost%3A8081%2Fservices&response_type=code&scope=identify%20bot',
+        link: 'https://discord.com/api/oauth2/authorize?client_id=1067011256403370044&permissions=2048&response_type=code&redirect_uri=http%3A%2F%2F128.199.149.52%3A8080%2Fredirector%3Fservice%3Ddiscord&scope=identify+bot',
         triggers: [
             {
                 name: 'Message received',
@@ -103,7 +103,7 @@ export const INTEGRATIONS = [
     {
         name: 'Github',
         code: 'github',
-        link: 'https://github.com/login/oauth/authorize?client_id=65bc43b86cebb7071f2f&redirect_uri=http://localhost:8081/services&scope=repo',
+        link: 'https://github.com/login/oauth/authorize?client_id=65bc43b86cebb7071f2f&redirect_uri=http%3A%2F%2F128.199.149.52%3A8080%2Fredirector%3Fservice%3Dgithub&scope=repo',
         triggers: [
             {
                 name: "New commit",
