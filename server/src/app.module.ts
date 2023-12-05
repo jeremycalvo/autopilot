@@ -39,7 +39,7 @@ import { RedirectController } from './redirect/redirect.controller';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(process.env.MONGO_URL, { useNewUrlParser: true }), //UsersModule,
+    MongooseModule.forRoot("mongodb://mongo:A33CCFD3dDD6dEEd4Db5fhGd24d5Acaa@roundhouse.proxy.rlwy.net:46759", { useNewUrlParser: true }), //UsersModule,
     MongooseModule.forFeature([{name: User.name, schema: UserSchema}, {name: Recipe.name, schema: RecipeSchema}]),
     JwtModule.register({
       secret: process.env.SECRET_KEY,
