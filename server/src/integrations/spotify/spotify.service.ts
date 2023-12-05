@@ -22,7 +22,7 @@ export class SpotifyService {
             'client_secret': process.env.SPOTIFY_CLIENT_SECRET,
             'grant_type': 'authorization_code',
             'code': code,
-            'redirect_uri': "http://localhost:8081/services"
+            'redirect_uri': "http://128.199.149.52:8080/redirector?service=spotify"
         }
         const headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
