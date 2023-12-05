@@ -103,7 +103,7 @@ export const INTEGRATIONS = [
     {
         name: 'Github',
         code: 'github',
-        link: 'https://github.com/login/oauth/authorize?client_id=65bc43b86cebb7071f2f&redirect_uri=http://128.199.149.52:8080/redirector?service=github&scope=repo',
+        link: 'https://github.com/login/oauth/authorize?client_id=65bc43b86cebb7071f2f&scope=repo&redirect_uri=http://128.199.149.52:8080/redirector?service=github',
         triggers: [
             {
                 name: "New commit",
