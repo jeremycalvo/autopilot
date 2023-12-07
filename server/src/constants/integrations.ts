@@ -2,7 +2,7 @@ export const INTEGRATIONS = [
     {
         name: 'Spotify',
         code: 'spotify',
-        link: 'https://accounts.spotify.com/authorize?scope=user-read-private%20user-read-email%20user-read-currently-playing%20user-modify-playback-state%20user-read-playback-state&access_type=offline&response_type=code&redirect_uri=http%3A%2F%2F128.199.149.52%3A8080%2Fredirector%3Fservice%3Dspotify&client_id=1ded278c7bd3445b8fdac4ba37af42de',
+        link: 'https://accounts.spotify.com/authorize?scope=user-read-private%20user-read-email%20user-read-currently-playing%20user-modify-playback-state%20user-read-playback-state&access_type=offline&response_type=code&redirect_uri=https%3A%2F%2Farea.linker-app.fr%2Fredirector%3Fservice%3Dspotify&client_id=1ded278c7bd3445b8fdac4ba37af42de',
         triggers: [
             {
                 name: 'Song changed',
@@ -67,7 +67,7 @@ export const INTEGRATIONS = [
     {
         name: 'Gmail',
         code: 'gmail',
-        link: 'https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fmail.google.com%2F%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=offline&include_granted_scopes=true&response_type=code&state=state_parameter_passthrough_value&redirect_uri=http://localhost:8081/services&client_id=816277643788-07kn2qqkvr18sfp80637fl9qivoek2k7.apps.googleusercontent.com',
+        link: 'https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fmail.google.com%2F%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=offline&include_granted_scopes=true&response_type=code&state=state_parameter_passthrough_value&redirect_uri=https%3A%2F%2Farea.linker-app.fr%2Fredirector%3Fservice%3Dgmail&client_id=816277643788-07kn2qqkvr18sfp80637fl9qivoek2k7.apps.googleusercontent.com',
         triggers: [
             {
                 name: 'New mail',
@@ -103,7 +103,7 @@ export const INTEGRATIONS = [
     {
         name: 'Github',
         code: 'github',
-        link: 'https://github.com/login/oauth/authorize?client_id=65bc43b86cebb7071f2f&scope=repo&redirect_uri=http://128.199.149.52:8080/redirector?service=github',
+        link: 'https://github.com/login/oauth/authorize?client_id=65bc43b86cebb7071f2f&scope=repo&redirect_uri=https://area.linker-app.fr/redirector?service=github',
         triggers: [
             {
                 name: "New commit",
@@ -125,7 +125,7 @@ export const INTEGRATIONS = [
     {
         name: 'Sheets',
         code: 'sheets',
-        link: 'https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/spreadsheets&access_type=offline&include_granted_scopes=true&response_type=code&state=state_parameter_passthrough_value&redirect_uri=http://localhost:8081/services&client_id=816277643788-07kn2qqkvr18sfp80637fl9qivoek2k7.apps.googleusercontent.com',
+        link: 'https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/spreadsheets&access_type=offline&include_granted_scopes=true&response_type=code&state=state_parameter_passthrough_value&redirect_uri=https%3A%2F%2Farea.linker-app.fr%2Fredirector%3Fservice%3Dsheets&client_id=816277643788-07kn2qqkvr18sfp80637fl9qivoek2k7.apps.googleusercontent.com',
         triggers: [],
         reactions: [
             {

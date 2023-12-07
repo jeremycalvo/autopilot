@@ -25,7 +25,7 @@ export class SheetsService {
                     this.oauthClient = new google.auth.OAuth2(
                         process.env.GOOGLE_CLIENT_ID,
                         process.env.GOOGLE_CLIENT_SECRET,
-                        "http://localhost:8081/services"
+                        "https%3A%2F%2Farea.linker-app.fr%2Fredirector%3Fservice%3Dsheets"
                     );
                 }
 
