@@ -31,7 +31,7 @@ export const INTEGRATIONS = [
     {
         name: 'Discord',
         code: 'discord',
-        link: 'https://discord.com/api/oauth2/authorize?client_id=1067011256403370044&permissions=2048&response_type=code&redirect_uri=http%3A%2F%2F128.199.149.52%3A8080%2Fredirector%3Fservice%3Ddiscord&scope=identify+bot',
+        link: 'https://discord.com/api/oauth2/authorize?client_id=1067011256403370044&permissions=2048&response_type=code&redirect_uri=https%3A%2F%2Farea.linker-app.fr%2Fredirector%3Fservice%3Ddiscord&scope=identify+bot',
         triggers: [
             {
                 name: 'Message received',
