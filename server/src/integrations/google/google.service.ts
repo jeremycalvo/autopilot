@@ -42,6 +42,7 @@ export class GoogleService {
             this.integrationService.setService(service, req.headers.authorization.split(' ')[1])
             return token;
         } catch (error) {
+            console.log(error);
             return error
         }
     }
