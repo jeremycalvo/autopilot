@@ -32,6 +32,7 @@ export class GithubService {
         }
         try {
             const res = await axios.post('https://github.com/login/oauth/access_token', data, {headers});
+            console.log(res)
             const service = {
                 name:"Github",
                 accessToken: res.data.split('=')[1].split('&')[0],
